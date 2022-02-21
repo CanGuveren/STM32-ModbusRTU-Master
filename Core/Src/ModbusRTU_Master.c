@@ -157,22 +157,6 @@ funcState_t Modbus_WriteSingleRegister(uint8_t SlaveID, uint16_t RegAddress, uin
 	return funcRxState; //CRC and ID is true.
 }
 
-uint8_t findByte(int16_t NumberOfCoil)
-{
-	volatile uint8_t NumberOfByte = 0;
-
-	while(NumberOfCoil >= 0)
-	{
-		NumberOfCoil -= 8;
-
-		NumberOfByte++;
-		if(NumberOfCoil < 0)
-		{
-			break;
-		}
-	}
-	return NumberOfByte;
-}
 
 /*
  * @brief Modbus_ReadCoil, Reads Coils #0x01
@@ -378,6 +362,23 @@ funcState_t Modbus_WriteMultipleRegisters(uint8_t SlaveID, uint16_t StartAddress
 	return funcRxState; //CRC and ID is true.
 }
 
+
+uint8_t findByte(int16_t NumberOfCoil)
+{
+	volatile uint8_t NumberOfByte = 0;
+
+	while(NumberOfCoil >= 0)
+	{
+		NumberOfCoil -= 8;
+
+		NumberOfByte++;
+		if(NumberOfCoil < 0)
+		{
+			break;
+		}
+	}
+	return NumberOfByte;
+}
 
 uint16_t MODBUS_CRC16(char *buf, uint8_t len )
 {

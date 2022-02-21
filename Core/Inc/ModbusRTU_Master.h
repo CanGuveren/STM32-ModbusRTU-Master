@@ -60,7 +60,7 @@ typedef enum
 funcState_t sendMessage(char *msg, uint16_t len);
 funcState_t takeMessage(char *msg, uint16_t len, uint8_t SlaveID);
 
-/************************************** MODBUS Command Function **********************************************************/
+/****************************************** MODBUS Command Function ******************************************************/
 funcState_t Modbus_ReadHoldingRegister(uint8_t SlaveID, uint16_t StartAddress, uint16_t NumberOfReg);
 funcState_t Modbus_WriteSingleRegister(uint8_t SlaveID, uint16_t RegAddress, uint16_t RegValue);
 
