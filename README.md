@@ -26,6 +26,8 @@
 
 ![image](https://user-images.githubusercontent.com/64977597/155140512-c5953311-b0f8-4cab-b72b-25b12425e3e4.png)
 
+- After that, you should set slave definition. (Setup/Slave Definition)
+
 - After this step you can use library functions. 
 
 You can find the **MODBUS CRC** function used in this project [here](https://github.com/LacobusVentura/MODBUS-CRC16).  
