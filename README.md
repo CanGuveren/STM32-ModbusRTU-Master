@@ -28,6 +28,6 @@
 
 - After this step you can use library functions. 
 
-
+You can find the **MODBUS CRC** function used in this project [here](https://github.com/LacobusVentura/MODBUS-CRC16).  
 
 
