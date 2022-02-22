@@ -30,4 +30,4 @@
 
 You can find the **MODBUS CRC** function used in this project [here](https://github.com/LacobusVentura/MODBUS-CRC16).  
 
-
+Modbus Slav Library [here](https://github.com/CanGuveren/STM32-ModbusRTU-Slave).
