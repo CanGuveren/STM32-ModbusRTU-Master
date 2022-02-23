@@ -1,6 +1,7 @@
 # How to Use This Library
 
 **1.** Download file and include the source file in Core/Src/ModbusRTU_Master.c and Core/Inc/ModbusRTU_Master.h header file in your project.
+
 **2.** Set UART peripheral settings in your project. 
 
 :exclamation: Attention. This project uses USART2 peripheral. If you want to different UART peripheral then you should change the value of UART_HandleTypeDef in the ModbusRTU_Master.c source file.
@@ -14,7 +15,7 @@
 ![image](https://user-images.githubusercontent.com/64977597/155137609-518863a6-ff9a-4240-b51a-944c7636bd23.png)
 
 
-**3.** You can use the library after making all the above settings. You can see the value of slave device register in the Modbus_Register[] array and you can see the value of slave device coil in the Modbus_Coil[] array. This arrays is in the ModbusRTU_Master.c source file.
+**4.** You can use the library after making all the above settings. You can see the value of slave device register in the Modbus_Register[] array and you can see the value of slave device coil in the Modbus_Coil[] array. This arrays is in the ModbusRTU_Master.c source file.
 
 ![image](https://user-images.githubusercontent.com/64977597/155137841-c1aec211-3c1f-4c65-b783-ef37dc45d929.png)
 
