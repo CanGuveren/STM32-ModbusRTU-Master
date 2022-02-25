@@ -1,5 +1,7 @@
 # How to Use This Library
 
+This library supports 1,3,5,6,15,16 functions of modbus. 
+
 **1.** Download file and include the source file in Core/Src/ModbusRTU_Master.c and Core/Inc/ModbusRTU_Master.h header file in your project.
 
 **2.** Set UART peripheral settings in your project. 
